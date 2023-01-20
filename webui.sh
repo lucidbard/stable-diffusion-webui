@@ -170,7 +170,7 @@ else
     then
         if [[ -z "${TORCH_COMMAND}" ]]
         then	    
-            export TORCH_COMMAND="python3.10 -m pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/rocm5.2"
+            export TORCH_COMMAND="python -m pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/rocm5.2"
         fi
         HSA_OVERRIDE_GFX_VERSION=10.3.0 exec "${python_cmd}" "${LAUNCH_SCRIPT}" "$@"
     else
