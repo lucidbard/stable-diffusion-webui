@@ -13,7 +13,7 @@
 #export COMMANDLINE_ARGS=""
 
 # python3 executable
-#python_cmd="python3"
+python_cmd="python3.10"
 
 # git executable
 #export GIT="git"
@@ -25,7 +25,7 @@
 #export LAUNCH_SCRIPT="launch.py"
 
 # install command for torch
-#export TORCH_COMMAND="pip install torch==1.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113"
+export TORCH_COMMAND="pip install torch==1.12.1+cu113 --extra-index-url https://download.pytorch.org/whl/cu113"
 
 # Requirements file to use for stable-diffusion-webui
 #export REQS_FILE="requirements_versions.txt"
